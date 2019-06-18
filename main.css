@@ -16,6 +16,7 @@ figure {
     display: inline-block;   /* インラインブロック化 */
     margin: 0px 3px 7px 0px; /* 外側に余白を追加(※右に3px・下に7px) */
     background-color: #efefef; 
+    vertical-align: top
 }
 figure img {
     display: block;          /* 余計な余白が出ないようにする */
