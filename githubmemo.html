@@ -19,9 +19,11 @@
     <h1>GitHubPagesの使い方 mac</h1>
         <!--h2は見出し2（中見出し）-->
         <p>windowsの人は櫻井さん(2019年3年生)がまとめてくれた<a href="https://sakuraimami.github.io/doyolab/git%20windows.html">ページ</a>を参照してください。
-        <h2>■■■■■まずは前準備■■■■■</h2>
+        <h2>【前準備その１：ターミナル】</h2>
             <!--h3は見出し3（小見出し）-->
-            <h3>ターミナルの開き方</h3>
+            <h3>■ターミナルとは</h3>
+            <p>ターミナルとはコマンドでPCを操作する画面です</p>
+            <h3>■ターミナルの開き方</h3>
             <p>
             DockからLaunchpadを選択します<br>
             <img src="images/20190611/t1.png" width="50%"><br><br>
@@ -33,9 +35,39 @@
             gitをやる上でターミナルはよく使うので、Dockに追加しておくといいでしょう。Dockへアプリケーションを追加する方法は<a href="https://support.apple.com/ja-jp/guide/mac-help/mh35859/mac">ここ</a>を参照してください。<br>
             <img src="images/20190611/t4.png" width="50%"><br><br>
             </p>
-            
-
-        <h2>■■■■■次はGitHubの設定■■■■■</h2>
+        
+        <h2>【前準備その２：Homebrewとgitのインストール】</h2>
+            <h3>■Homebrewとは</h3>
+            <p>Homebrewとはmacのパッケージ（ソフト）のインストールを簡単にできるパッケージ管理システムです</p>
+            <h3>■Homebrewをインストール</h3>
+            <!--pは段落-->
+            <p>
+                <img src="images/20190611/homebrew.png" width="30%">
+                <br>
+                ターミナルに下記のコマンドをコピペし、Enterを押すとHomebrewがインストールできます。<br><!--brは改行-->
+                しばらく時間がかかるので、待ちましょう。<br><br>
+                <!--部分的に黒バックにする。cssにプロパティは記述-->
+                <span class="blackback">
+                    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+                </span>
+            </p>
+            <h3>■gitとは</h3>
+            <p>gitとはバージョン管理したり、公開したり、共同作業したりする時に使うソフトです。ゼミでは主にホームページの公開に使っています。</p>
+            <h3>gitをインストール</h3>
+                <p>
+                    ターミナルで下記のコマンドを入力しEnterを押し、gitをインストールします。<br>
+                    <span class="blackback">
+                        brew install git
+                    </span>
+                </p>
+            <h3>git用のフォルダの作成</h3>
+                    <p>
+                    フォルダはなんでもいいのですが、わかりやすいようにホームディレクトリにmygitというフォルダを作りましょう。ターミナルを立ち上げて下記のコマンドを入力するとフォルダが作成されます。mkdirはmake directory（ディレクトリ（フォルダ）を作る）の略です。<br>
+                    <span class="blackback">
+                        mkdir mygit
+                    </span>
+                </p>
+        <h2>【次はGitHubの設定】</h2>
             <!--h3は見出し3（小見出し）-->
             <h3>１）GitHubのアカウント</h3>
             <!--pは段落-->
@@ -47,55 +79,32 @@
             </p>
             <h3>２）リポジトリーの作成</h3>
             <p>
-                githubの右上にある+マークをクリックし、New Repositoryをクリックし、新しいリポジトリーを作ります。<br>
+                リポジトリーはフォルダの状態を記憶する場所なのですが、イメージしずらいと思うので、今はフォルダと思っておきましょう。詳しく知りたい人は<a href="https://backlog.com/ja/git-tutorial/intro/02/">ここ</a>を参照してください。<br>
+                
+            </p>
+            <p>
+                【リポジトリの作成方法】<br>
+                githubの右上にある+マークをクリックし、New Repositoryをクリックし、新しいリポジトリーを作ります。<br><br>
                 <img src="images/20190611/createrepo.png" width="30%">
             </p>
             <p>
-                下記の画像を参考にdoyolabというリポジトリーを作成します。<br>
+                下記の画像を参考にdoyolabというリポジトリーを作成します。赤枠のチェッックを入れた後に「Create Repository」を押してください。<br>
                 <img src="images/20190611/step1.png" width="80%">
             </p>
             <p>
                 リポジトリーのSettingsから下記の設定をします。<br>https://ユーザー名.github.io/doyolab/　が皆さんのホームページになります。
                 <img src="images/20190611/step1-1.png" width="80%">
             </p>
-            <h3>Homebrewをインストール</h3>
-            <!--pは段落-->
-            <p>
-                <img src="images/20190611/homebrew.png" width="30%">
-                <br>
-                ターミナルに下記のコマンドをコピペし、Enterを押すとHomebrewがインストールできます。<br><!--brは改行-->
-                しばらく時間がかかるので、待ちましょう。<br><br>
-                <!--部分的に黒バックにする。cssにプロパティは記述-->
-                <span class="blackback">
-                    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-                </span>
-                
-            </p>
-
-            <h3>gitをインストール</h3>
-                <p>
-                    ターミナルで下記のコマンドを入力しEnterを押し、gitをインストールします。<br>
-                    <span class="blackback">
-                        brew install git
-                    </span>
-                </p>
-            <h3>フォルダの作成</h3>
-                    <p>
-                    フォルダはなんでもいいのですが、わかりやすいようにホームディレクトリにmygitというフォルダを作りましょう。ターミナルを立ち上げて下記のコマンドを入力するとフォルダが作成されます。<br>
-                    <span class="blackback">
-                        mkdir mygit
-                    </span>
-                </p>
 
 
 
-        <h2>■リポジトリーを自分のPCにクローン</h2>
-            <h3>gitのURLをコピー</h3>
+        <h2>【続いて、リポジトリーを自分のPCにクローン】</h2>
+            <h3>１）gitのURLをコピー</h3>
             <p>
                 githubのdoyolabというリポジトリーの中で下記のボタンを押し、リポジトリーのURLをコピーします。
                 <img src="images/20190611/step2.png" width="80%">
             </p>
-            <h3>mygitに移動</h3>
+            <h3>２）mygitに移動</h3>
             <p>
                 ターミナルを開いて、下記のコマンドでmygitフォルダに移動します。cdはchange directoryの略です<br>
                 <span class="blackback">
@@ -111,11 +120,16 @@
             </p>
             <h3>確認</h3>
             <p>mygitの中にdoyolabというフォルダができて、doyolabフォルダの中にREADME.mdファイルが入っていれば成功です。
-    
-        <h2>■運用</h2>
+                
+        <h2>【サンプルhtmlファイルをダウンロード】</h2>
+            <p>htmlを知っている人は自分で作っても構いません。htmlに自信がない人はサンプルファイルをダウンロードして修正しながら自分のページを作ってみましょう。まずは<a href="data/doyolab.zip">サンプルファイル</a>をダウンロードしてください。ダウンロードしたzipファイルを解凍し、doyolabというフォルダの中身をmygitフォルダの中のdoyolabフォルダの中にコピーしてください。
+
+            </p>
+            
+        <h2>【公開】</h2>
             <h3>ファイルを追加、変更したら</h3>
             <p>
-                htmlファイルを作って、doyolabフォルダに入れ、下記の手順でgithubへアップロードできます。<br>
+                下記の手順でアップロードしてください。<br>
                 <span class="blackback">
                     cd mygit/doyolab
                 </span>(doyolabフォルダに移動するだけなので、既に移動済みの場合はいらない)
@@ -125,12 +139,15 @@
                 </span>
                 <br>
                 <span class="blackback">
-                    git commit -m"メッセージ"
+                    git commit -m "メッセージ"
                 </span>
                 <br>
                 <span class="blackback">
                     git push
                 </span>
+                
+                <br><br><br>自分のページに下のようなページが表示されたら成功です。（すぐに更新されない場合は１分ぐらい待ってから更新してみてください）日々のページを更新するときはこの手順でやってください。<br>
+                <img src="images/20190611/r1.png" width="50%">
             </p>
                 
 
