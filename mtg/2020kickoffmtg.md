@@ -1,5 +1,5 @@
-#2020 doyoab kick-off mtg
-##スケジュール
+# 2020 doyoab kick-off mtg
+## スケジュール
 - gitについて
  - なぜgitを使うか
  - gitのインストール
