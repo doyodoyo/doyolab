@@ -17,57 +17,32 @@
 
     <!--h1は見出し１（大見出し）-->
     <h1>ターミナルとGitHubPagesの使い方 for mac</h1>
-        <!--h2は見出し2（中見出し）-->
-        <p>★windowsの人は櫻井さん(2019年3年生)がまとめてくれた<a href="https://sakuraimami.github.io/doyolab/git%20windows.html">ページ</a>を参照してください。
-        <h2>【前準備その１：ターミナル】</h2>
+        <h2>【gitとは】</h2>
+            <p>gitとはバージョン管理したり、公開したり、共同作業したりする時に使うソフトです。ゼミでは主にホームページの公開に使っています。詳しく知りたい人は<a href="https://backlog.com/ja/git-tutorial/">ここ</a>を参照してください。</p>
+
+        <h2>【前準備】</h2>
             <!--h3は見出し3（小見出し）-->
-            <h3>■ターミナルとは</h3>
-            <p>ターミナルとはコマンドでPCを操作する画面です</p>
-            <h3>■ターミナルの開き方</h3>
+            <h3>■Macの場合</h3>
             <p>
-            DockからLaunchpadを選択します<br>
-            <img src="images/20190611/t1.png" width="45%"><br><br>
-            その他を選択します<br>
-            <img src="images/20190611/t2.png" width="45%"><br><br>
-            ターミナルを選択します<br>
-            <img src="images/20190611/t3.png" width="45%"><br><br><br><br>
-            
-            gitをやる上でターミナルはよく使うので、Dockに追加しておくといいでしょう。Dockへアプリケーションを追加する方法は<a href="https://support.apple.com/ja-jp/guide/mac-help/mh35859/mac">ここ</a>を参照してください。<br>
-            <img src="images/20190611/t4.png" width="50%"><br><br>
-            </p>
-        
-        <h2>【前準備その２：Homebrewとgitのインストール】</h2>
-            <h3>■Homebrewとは</h3>
-            <p>Homebrewとはmacのパッケージ（ソフト）のインストールを簡単にできるパッケージ管理システムです</p>
-            <h3>■Homebrewをインストール</h3>
-            <!--pは段落-->
-            <p>
+                使用しているパソコンがMacの場合は<a href="01_git_prepare/git_mac.html" target="_blank">ここ</a>を参考にしてターミナルからHomebrewとgitをインストールしてください。<br><br>
                 <img src="images/20190611/homebrew.png" width="30%">
-                <br>
-                ターミナルに下記のコマンドをコピペし、Enterを押すとHomebrewがインストールできます。<br><!--brは改行-->
-                しばらく時間がかかるので、待ちましょう。<br><br>
-                <!--部分的に黒バックにする。cssにプロパティは記述-->
-                <span class="blackback">
-                    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-                </span>
             </p>
-            <h3>■gitとは</h3>
-            <p>gitとはバージョン管理したり、公開したり、共同作業したりする時に使うソフトです。ゼミでは主にホームページの公開に使っています。</p>
-            <h3>gitをインストール</h3>
-                <p>
-                    ターミナルで下記のコマンドを入力しEnterを押し、gitをインストールします。<br>
-                    <span class="blackback">
-                        brew install git
-                    </span>
-                </p>
+            <h3>■Windowsの場合</h3>
+            <p>
+                使用しているパソコンがWindowsの場合は<a href="01_git_prepare/git_win.html" target="_blank">ここ</a>を参考にしてGit Bashをインストールしてください。<br><br>
+                <img src="images/20190611/gitbash.png" width="20%">
+                
+        <h2>【gitの初期設定】</h2>
             <h3>git用のフォルダの作成</h3>
                     <p>
-                    フォルダはなんでもいいのですが、わかりやすいようにホームディレクトリにmygitというフォルダを作りましょう。ターミナルを立ち上げて下記のコマンドを入力するとフォルダが作成されます。mkdirはmake directory（ディレクトリ（フォルダ）を作る）の略です。<br>
+                    Macの人はターミナルを立ち上げ、Windowsの人はGit Bashを立ち上げてください。<br>
+                    まずgit用のフォルダを作りたいと思います。フォルダ名はなんでもいいのですが、わかりやすいようにホームディレクトリにmygitというフォルダを作りましょう。立ち上げたターミナルorGitBashに下記のコマンドを入力するとフォルダが作成されます。mkdirはmake directory（ディレクトリ（フォルダ）を作る）の略です。<br>
                     <span class="blackback">
                         mkdir mygit
                     </span>
                 </p>
             <h3>gitの設定</h3>
+                    <p>gitの初期設定を行います。</p>
                     <p>
                         <span class="blackback">
                             git init
@@ -89,7 +64,7 @@
             <!--pは段落-->
             <p>
                 <!--a href はリンク-->
-                <a href="https://github.com/">GitHubのページ</a>でGitHubのアカウントを作りましょう。<br>アカウント名、メールアドレス、パスワードは忘れないようにしておきましょう。
+                <a href="https://github.com/">GitHubのページ</a>でGitHubのアカウントを作りましょう。<br><strong>アカウント名、メールアドレス、パスワードは忘れないようにしておきましょう。メモ帳などにコピペしておきましょう。</strong>
                 <br><!--brは改行-->
                 <img src="images/20190611/GitHub_Logo.png" width="30%">
             </p>
@@ -162,7 +137,7 @@
                     git push
                 </span>
                 
-                <br><br><br>自分のページに下のようなページが表示されたら成功です。（すぐに更新されない場合は１分ぐらい待ってから更新してみてください）日々のページを更新するときはこの手順でやってください。<br>
+                <br><br><br>自分のページに下のようなページが表示されたら成功です。（すぐに更新されない場合は１分ぐらい待つか、ブラウザの<a href="https://support.google.com/chrome/answer/95589?co=GENIE.Platform%3DDesktop&hl=ja" target="_blank">履歴を削除</a>してから試しましょう。）<br>日々のページを更新するときはこの手順でやってください。<br>
                 <img src="images/20190611/r1.png" width="50%">
             </p>
                 

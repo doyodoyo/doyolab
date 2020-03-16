@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHubについて</title>
+    
+    <link rel="stylesheet" href="../main.css">
+</head>
+
+
+<body>
+    <!--ホームに帰るためのボタン-->
+    <logotohome>
+    <a href="index.html"><img src="../images/logo.png" alt=""></a>
+    </logotohome>
+
+    <!--h1は見出し１（大見出し）-->
+    <h1>gitを使う前準備 for mac</h1>
+        <!--h2は見出し2（中見出し）-->
+        <h2>【ターミナル】</h2>
+            <!--h3は見出し3（小見出し）-->
+            <h3>■ターミナルとは</h3>
+            <p>ターミナルとはコマンドでPCを操作する画面です</p>
+            <h3>■ターミナルの開き方</h3>
+            <p>
+            DockからLaunchpadを選択します<br>
+            <img src="../images/20190611/t1.png" width="45%"><br><br>
+            その他を選択します<br>
+            <img src="../images/20190611/t2.png" width="45%"><br><br>
+            ターミナルを選択します<br>
+            <img src="../images/20190611/t3.png" width="45%"><br><br><br><br>
+            
+            gitをやる上でターミナルはよく使うので、Dockに追加しておくといいでしょう。Dockへアプリケーションを追加する方法は<a href="https://support.apple.com/ja-jp/guide/mac-help/mh35859/mac">ここ</a>を参照してください。<br>
+            <img src="../images/20190611/t4.png" width="50%"><br><br>
+            </p>
+        
+        <h2>【Homebrewとgitのインストール】</h2>
+            <h3>■Homebrewとは</h3>
+            <p>Homebrewとはmacのパッケージ（ソフト）のインストールを簡単にできるパッケージ管理システムです</p>
+            <h3>■Homebrewをインストール</h3>
+            <!--pは段落-->
+            <p>
+                <img src="../images/20190611/homebrew.png" width="30%">
+                <br>
+                ターミナルに下記のコマンドをコピペし、Enterを押すとHomebrewがインストールできます。<br><!--brは改行-->
+                しばらく時間がかかるので、待ちましょう。<br><br>
+                <!--部分的に黒バックにする。cssにプロパティは記述-->
+                <span class="blackback">
+                    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+                </span>
+            </p>
+            <h3>■gitとは</h3>
+            <p>gitとはバージョン管理したり、公開したり、共同作業したりする時に使うソフトです。ゼミでは主にホームページの公開に使っています。</p>
+            <h3>gitをインストール</h3>
+                <p>
+                    ターミナルで下記のコマンドを入力しEnterを押し、gitをインストールします。<br>
+                    <span class="blackback">
+                        brew install git
+                    </span>
+                </p>
+
+
+
+</body>
