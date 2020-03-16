@@ -16,10 +16,13 @@
     </logotohome>
 
     <!--h1は見出し１（大見出し）-->
-    <h1>ターミナルとGitHubPagesの使い方 for mac</h1>
+    <h1>GitHubPagesの使い方</h1>
         <h2>【gitとは】</h2>
-            <p>gitとはバージョン管理したり、公開したり、共同作業したりする時に使うソフトです。ゼミでは主にホームページの公開に使っています。詳しく知りたい人は<a href="https://backlog.com/ja/git-tutorial/">ここ</a>を参照してください。</p>
-
+            <p>
+                <img src="images/20190611/git.png" width="20%"><br>
+                gitとはバージョン管理したり、公開したり、共同作業したりする時に使うソフトです。ゼミでは主にホームページの公開に使っています。詳しく知りたい人は<a href="https://backlog.com/ja/git-tutorial/">ここ</a>を参照してください。<br>
+            
+            </p>
         <h2>【前準備】</h2>
             <!--h3は見出し3（小見出し）-->
             <h3>■Macの場合</h3>
@@ -33,7 +36,7 @@
                 <img src="images/20190611/gitbash.png" width="20%">
                 
         <h2>【gitの初期設定】</h2>
-            <h3>git用のフォルダの作成</h3>
+            <h3>１）git用のフォルダの作成</h3>
                     <p>
                     Macの人はターミナルを立ち上げ、Windowsの人はGit Bashを立ち上げてください。<br>
                     まずgit用のフォルダを作りたいと思います。フォルダ名はなんでもいいのですが、わかりやすいようにホームディレクトリにmygitというフォルダを作りましょう。立ち上げたターミナルorGitBashに下記のコマンドを入力するとフォルダが作成されます。mkdirはmake directory（ディレクトリ（フォルダ）を作る）の略です。<br>
@@ -41,19 +44,18 @@
                         mkdir mygit
                     </span>
                 </p>
-            <h3>gitの設定</h3>
-                    <p>gitの初期設定を行います。</p>
-                    <p>
+            <h3>２）gitの設定</h3>
+                    <p>gitの初期設定を行います。下記のコマンドをターミナル(orGitBash)に入力してEnterを押しましょう<br>
                         <span class="blackback">
                             git init
                         </span>
                     </p>
-                    <p>
+                    <p>次に下記のコマンドを入力し、Enterを押します。※打ち間違えが多いので、コピペして自分のメールアドレスだけ修正するといいでしょう。<br>
                         <span class="blackback">
                             git config --global user.email "自分のメールアドレス"
                         </span>
                     </p>    
-                    <p>
+                    <p>次に下記のコマンドを入力し、Enterを押します。※打ち間違えが多いので、コピペして自分の名前(アルファベット)だけ修正するといいでしょう。<br>
                         <span class="blackback">
                             git config --global user.name "自分の名前(アルファベット)" 
                         </span>
@@ -97,14 +99,14 @@
             </p>
             <h3>２）mygitに移動</h3>
             <p>
-                ターミナルを開いて、下記のコマンドでmygitフォルダに移動します。cdはchange directoryの略です<br>
+                ターミナル(orGitBash)で、下記のコマンドを入力しmygitフォルダに移動します。cdはchange directoryの略です<br>
                 <span class="blackback">
                     cd mygit
                 </span>
             </p>
             <h3>自分のPCにリポジトリをクローンする</h3>
             <p>
-                ターミナルで下記のコマンドを入力し、クローンを作成してください。(URLは上でコピーしたURLです。)<br>
+                ターミナル(orGitBash)で下記のコマンドを入力し、GitHubリポジトリのクローンを作成してください。(URLは上でコピーしたURLです。)<br>
                 <span class="blackback">
                     git clone リポジトリのURL
                 </span>
