@@ -54,7 +54,7 @@ h2{
 h3{
     margin-left: 3em;
 }
-p,div,ul{
+p,div,ul,ol{
     margin-left: 5em;
 }
 span.blackback{
