@@ -7,6 +7,7 @@ import serial
 import os
 import time
 import requests
+import datetime
 
 def get_SerialPortsList():
     """ Lists serial port names
@@ -109,3 +110,10 @@ def sendMessage_To_Line(token,message):
     payload = {'token': token, 'message': message}
     response = requests.post("https://doyolab.net/appli/iot/line", data=payload)
     return response.text
+
+
+def get_now_time():
+    return datetime.datetime.now().time()
+
+def get_now():
+    return datetime.datetime.now()
