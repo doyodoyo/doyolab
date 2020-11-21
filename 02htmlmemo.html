@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="jp">
+<!--表示されないhead部分-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTMLについて</title>
-    
     <link rel="stylesheet" href="main.css">
 </head>
 
 
+<!--ブラウザに表示されるbody部分-->
 <body>
     <!--ホームに帰るためのボタン-->
     <logotohome>
@@ -16,15 +17,25 @@
     </logotohome>
 
     <h1>htmlについて</h1>
+        <h2>おすすめエディタ</h2>
+        <div>
+            <img src="images/20190611/brackets.svg" width="20%"><br>
+            htmlを編集するのにおすすめのエディタはBracektsです。macでHomebrewを入れている人は下記のコマンドでインストールできます。<br>
+            <span class="blackback">
+                    brew cask install brackets
+            </span><br>
+            <a href="http://brackets.io/">ここから</a>ダウンロードしてインストールすることもできます。<br>
+            
+        </div>
         <h2>タグ</h2>
-        <p>
+        <div>
             htmlはタグと呼ばれる&lt;〜&gt;&lt;〜/&gt;で囲むことでその部分の役割やフォーマットを設定できます。<br>
             &lt;〜&gt;・・・・・・・・・&lt;〜/&gt;&lt;〜/&gt;<br><br>
             例えば下記のように記述した場合「htlmlについて」という文字は大見出しとして扱われます。<br>
             &lt;h1&gt;htmlのこと&lt;/h1&gt;
-        </p>
+        </div>
         <h2>代表的なタグ</h2>
-        <p>
+        <div>
             
             ■&lt;h1&gt;・・・&lt;/h1&gt;  &ensp; &ensp;大見出し<br><br>
             ■&lt;h2&gt;・・・&lt;/h2&gt;  &ensp; &ensp;中見出し<br><br>
@@ -53,31 +64,22 @@
             <br><br>
             例)&lt;a href="https://github.com/"  target="_blank"&gt;・・・&lt;/a&gt;
             
-        </p>
-        <h2>おすすめエディタ</h2>
-        <p>
-            <img src="images/20190611/brackets.svg" width="20%"><br>
-            htmlを編集するのにおすすめのエディタはBracektsです。macでHomebrewを入れている人は下記のコマンドでインストールできます。<br>
-            <span class="blackback">
-                    brew cask install brackets
-            </span><br>
-            <a href="http://brackets.io/">ここから</a>ダウンロードしてインストールすることもできます。<br>
-            
-        </p>
+        </div>
+
             <h3>ライブビュー機能</h3>
-            <p>
+            <div>
                 [ファイル]→[ライブビュー]を選択すると、ブラウザでどう見えるか確認しながら編集できます。（htmlファイルは保存した時点で表示されている内容が更新されます。）
-            </p>
+            </div>
         <h2>フォーマット</h2>
-            <p>
+            <div>
                 htmlに自信がない人は<a href="data/doyolab.zip">このファイル</a>をダウンロードして修正しながら自分のページを作ってください。
                 
-            </p>
+            </div>
         <h2>CSSを変更しても表示がうまくいかない場合</h2>
-            <p>
+            <div>
                 cssを変更しアップロードしても更新されない場合があります。その場合は下の図のchrome右上のアイコンをクリックし、[設定]→[詳細設定]→[閲覧履歴データの削除]で[キャッシュされた画像とファイル
                 ]にチェックを入れて[データ削除ボタンを押してください。]<br>
                 <img src="images/20190611/chrome.png" width="20%"><br>
-            </p>
+            </div>
 
 </body>

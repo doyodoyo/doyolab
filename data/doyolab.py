@@ -1,5 +1,6 @@
 # doyolab package
-# ver1.0 20200714
+# ver1.1 20201121
+# ON-OFF機能追加
 
 import sys
 import glob
@@ -82,7 +83,7 @@ def remove_file(filepath):
 
 
 
-def sendData_To_doyolabIoTserver(user_key,sub_id,date_data,int_data,float_data,text_data):
+def sendData_To_IoTserver(user_key,sub_id,date_data,int_data,float_data,text_data):
     # payload = {'user_key': user_key, 'sub_id': sub_id, 'date_data': date_data, 'int_data': int_data, 'float_data': float_data, 'text_data': text_data}
     payload = {'user_key': user_key, 'sub_id': sub_id}
     if date_data !='':
@@ -98,8 +99,8 @@ def sendData_To_doyolabIoTserver(user_key,sub_id,date_data,int_data,float_data,t
     # date_data= str(date_data).replace(' ','-')
     # response = requests.get('https://doyolab.net/appli/iot/add?d='+user_key+','+sub_id+','+date_data+','+str(int_data)+','+str(float_data)+','+str(text_data))
     return response.text
-def getData_To_doyolabIoTserver(user_key,sub_id):
-    payload = {'user_key': user_key, 'sub_id': sub_id}
+def getData_To_IoTserver(user_key,sub_id,data_limit):
+    payload = {'user_key': user_key, 'sub_id': sub_id,'data_limit':data_limit}
     response = requests.post("https://doyolab.net/appli/iot/raw_data", data=payload)
 
     # getはセキュリティのため使えなくした
@@ -117,3 +118,16 @@ def get_now_time():
 
 def get_now():
     return datetime.datetime.now()
+
+def turn_switch_To_IoTserver(user_key,sub_id):
+    payload = {'user_key': user_key, 'sub_id': sub_id}
+    response = requests.post("https://doyolab.net/appli/iot/onoff", data=payload)
+
+    return response.text
+
+def get_switch_To_IoTserver(user_key,sub_id):
+
+    payload = {'user_key': user_key, 'sub_id': sub_id}
+    response = requests.post("https://doyolab.net/appli/iot/get_onoff", data=payload)
+
+    return response.text
