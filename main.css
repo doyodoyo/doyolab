@@ -1,3 +1,22 @@
+@charset "utf-8";
+/* 冒頭でimport */
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese');
+/* フォントを指定したいところで */
+
+.mybutton {
+  display       : inline-block;
+  border-radius : 20px;          /* 角丸       */
+  font-size     : 15pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 42px;   /* 余白       */
+  background    : rgb(255,107,107);     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid rgb(255,107,107);    /* 枠の指定 */
+}
 logo img{
     display: block;
     width: 150px;
@@ -35,7 +54,49 @@ figcaption {
 /* ---------------------------------------------------------------------------*/
 
 
-/* ========== common ========== */
+h1 {
+	font-size: 200%;
+	font-family: 'Raleway';
+	/*	font-family: 'M PLUS Rounded 1c',*/
+}
+
+h2,h3,h4{
+	font-family: 'Raleway';
+
+}
+
+
+h2.underline {
+    text-decoration:underline;
+    text-decoration-color:rgb(255,107,107);
+    text-decoration-thickness: 2px;
+}
+h3.underline {
+    text-decoration:underline;
+    text-decoration-color:rgb(255,107,107);
+    text-decoration-thickness: 2px;
+}
+h4.underline {
+    text-decoration:underline;
+    text-decoration-color:rgb(255,107,107);
+    text-decoration-thickness: 2px;
+}
+
+h2.mplus{
+	font-size: 150%;
+	font-family: 'M PLUS Rounded 1c';
+}
+/*
+div.h2{
+	margin-left: 50px;
+}
+div.h3{
+	margin-left: 70px;
+}
+div.h4{
+	margin-left: 80px;
+}
+*/
 html, body {
 	font-size: 16px;
 	font-family: sans-serif;
@@ -44,22 +105,22 @@ html, body {
     margin-bottom: 40px;
 	background: #efefef;
 }
+/*
 h1{
     text-indent: 0em;
 }
 h2{
-    margin-left: 2em;
-    margin-top: 2em;
+
 }
 h3{
     margin-left: 3em;
 }
-p,div,ul,ol{
-    margin-left: 5em;
+*/
+p,ul,ol{
+    margin-left: 1em;
 }
-span.blackback{
-    text-indent: 4em;
-    background: #393939;
-    color: #efefef;
+div{
+    margin-left: 2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
-
